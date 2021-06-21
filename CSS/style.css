@@ -1,0 +1,308 @@
+
+
+/* AJUSTES GENERALES */
+body{
+
+    margin: 5% 5% 5% 5%;
+    background-color: black;
+    color: white ;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.6px;
+    padding-bottom: 5%;
+    animation-duration: 2s;
+    animation-name: fade;
+
+
+}
+
+div{
+    padding-top: 1%;
+
+}
+
+/* TEXTO BIOGRAFÍA */
+#textoBio{
+    font-weight: lighter;
+    font-size: small;
+    text-align: center;
+    padding-top: 2%;
+    
+}
+
+/* COMING SOON TEXT */
+
+#textComing{
+
+    font-size: xx-large;
+    text-align: center;
+    margin: 5% 5% 5% 5%;
+
+}
+
+form{
+
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* ICONOS REDES SOCIALES */
+
+#socialIcons{
+    
+    grid-area: socialMedia;
+    text-align: center;
+    padding: 1%;
+
+}
+
+/* AJUSTES TEXTO FOOTER */
+
+#textoFoot{
+
+    grid-area: footerInfo;
+    font-weight: lighter;
+    font-size: small;
+    text-align: center;
+    padding-top: 2%;
+
+}
+
+
+    
+
+footer{
+
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 32px 72px;
+    grid-template-areas: "socialMedia"
+                         "footerInfo" ;
+    
+}
+
+
+main{
+    
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "videoIntro"
+}
+
+/* HEADER GRID */
+
+header{
+
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 72px 60px 36px;
+    grid-template-areas: "header1 header2"
+                         "header3 header3"
+                         "header4 header4";
+
+    padding-bottom: 3%;                      
+    
+
+                       
+}
+
+a{
+    
+    text-decoration: none;
+    color: white;
+    word-spacing: 20%;
+    padding-left: 1.5%;
+    
+
+}
+
+/* NAVEGADOR AJUSTES & GRID */
+
+nav{
+
+    grid-area: header2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: lighter;
+    font-size: small;
+    
+}
+
+
+/* LOGO LINK HEADER */
+
+#logoIzq{
+    
+    grid-area: header1;
+    display: flex; 
+    justify-content: center;
+    
+
+}
+
+
+
+h1{
+    grid-area: header3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+
+    grid-area: header4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+h3{
+
+    grid-area: header4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    font-size: large;
+
+}
+
+/* ANIMACIÓN HOVER LINK THE UNBORN NAV */
+
+
+#logoIzq:hover{
+    animation-duration: 3s;
+    animation-name: fade;
+
+    }
+
+#linkTheUnborn:hover{
+    animation-duration: 2s;
+    animation-name: fade;
+
+
+}
+
+#linkReleases:hover{
+    animation-duration: 2s;
+    animation-name: fade;
+
+
+}
+
+#linkPodcasts:hover{
+    animation-duration: 2s;
+    animation-name: fade;
+
+
+}
+
+#linkBio:hover{
+    animation-duration: 2s;
+    animation-name: fade;
+
+
+}
+
+#linkShop:hover{
+    animation-duration: 2s;
+    animation-name: fade;
+
+
+}
+
+#linkContact:hover{
+    animation-duration: 2s;
+    animation-name: fade;
+
+
+}
+
+.animate__animated.animate__slideInUp{
+    animation-duration: 1.5s;
+}
+
+
+
+
+@keyframes fade{
+
+    0% { opacity: 0;
+    }
+
+    100%{ opacity: 1;
+    
+    }
+}
+
+
+
+
+
+/* MEDIA MOBILE ADAPT */
+
+/* CAMBIO IMAGEN HEADER VERTICAL */
+
+@media only screen and ( max-width:600px){
+    #headerMain{
+
+        grid-template-columns: 100%;
+        grid-template-rows: 72px 80px 36px 20px;
+        grid-template-areas: "header1" 
+                             "header2"
+                             "header3"
+                             "header4";
+        
+        
+                              
+    }
+    h1{
+        grid-area: header3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+    }
+
+    h2{
+        
+        font-size: 14px;
+    }
+
+    h3{
+        
+        font-size: 12px;
+        
+        
+
+    }
+
+    nav{
+
+         grid-area: header2;
+          height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-weight: lighter;
+        font-size: small;
+    
+    }
+    
+    
+ 
+}
+
+
+
+
+
+
+
